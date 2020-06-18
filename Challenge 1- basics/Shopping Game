@@ -1,0 +1,36 @@
+import java.util.*;
+public class Doubtspat {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int z = 1; z <= t; z++) {
+            int ayu = 0;
+            int har = 0;
+            int i = 0;
+            int j = 0;
+            int alt = 1;
+            int m = sc.nextInt();
+            int n = sc.nextInt();
+            while (ayu <= m && har <= n) {
+            //  i = i + alt;
+                ayu = ayu +alt;
+                alt++;
+                if (ayu > m){
+                    System.out.println("Harshit");
+                    break;
+                }
+//              j = j + alt;
+                har = har +alt;
+                alt++;
+                if ( har > n){
+                    System.out.println("Aayush");
+                    break;
+                }
+            }
+            // if (ayu > har)
+            //  System.out.println("Aayush");
+            // else
+            // System.out.println("Harshit");
+        }
+    }
+}
