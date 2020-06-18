@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+	{
+		Scanner sc = new Scanner(System.in);
+		int n1=sc.nextInt();
+		int n2=sc.nextInt();
+		int rem=0;
+		int dividend=n1,divisor=n2;
+		if(dividend<divisor)
+		{
+			dividend=n2;
+			divisor=n1;
+		}
+		
+		while(dividend%divisor!=0)
+		{
+			rem=dividend%divisor;
+
+			dividend=divisor;
+			divisor=rem;
+			
+		}
+		System.out.println(divisor);
+    }
+}
