@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String args[])
+	{
+		Scanner sc = new Scanner (System.in);
+		int n=sc.nextInt();
+		int sum1=0;
+		int sum2=0;
+		while(n!=0)
+		{	
+			int temp=0;
+			temp=n%10;
+			sum1=sum1+temp;
+			n=n/10;
+
+			temp=n%10;
+			sum2=sum2+temp;
+			n=n/10;
+		}	
+		System.out.println(sum1);
+		System.out.println(sum2);
+
+    }
+}
