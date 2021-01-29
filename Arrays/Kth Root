@@ -1,1 +1,28 @@
+import java.util.Scanner;
 
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		long tc = sc.nextLong();
+		while(tc-->0) {
+			long n = sc.nextLong();
+			long k = sc.nextLong();
+
+			long low = 1, high = n;
+			long ans = low;
+			while(low <= high) {
+				long mid = low + (high - low)/2;
+				double pow = Math.pow(mid, k);
+
+				if(pow <= n) {
+				    ans = mid;
+					low = mid + 1;
+				}
+				else {
+					high = mid - 1;
+				}
+			}
+			System.out.println(ans);
+		}
+	}
+}
