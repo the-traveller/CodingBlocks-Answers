@@ -11,6 +11,7 @@ public class Doubtspat {
             int alt = 1;
             int m = sc.nextInt();
             int n = sc.nextInt();
+            
             while (ayu <= m && har <= n) {
             //  i = i + alt;
                 ayu = ayu +alt;
@@ -22,7 +23,9 @@ public class Doubtspat {
 //              j = j + alt;
                 har = har +alt;
                 alt++;
-                if ( har > n){
+                
+                if ( har > n)
+                {
                     System.out.println("Aayush");
                     break;
                 }
