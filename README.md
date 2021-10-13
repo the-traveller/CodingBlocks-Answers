@@ -1,2 +1,2 @@
 # CodingBlocks-Answers
-This is the repository that contains answers to the questions asked in the Crux Course of Java DS Algo by Coding Blocks
+This is the repository which contains answer-codes to the questions asked in the Crux Course of Java DS Algo by Coding Blocks
